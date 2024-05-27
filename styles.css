@@ -48,7 +48,7 @@ section {
 .skills-container img {
     flex: 0 1 calc(15% - 20px); /* Ancho de cada imagen menos el espacio */
     max-width: 40px; /* Tamaño máximo de las imágenes */
-    height: auto;
+    /*height: auto;*/
 }
 
 .python-frameworks {
@@ -62,7 +62,7 @@ section {
 .python-frameworks img {
     flex: 0 1 calc(15% - 20px); /* Ancho de cada imagen menos el espacio */
     max-width: 40px; /* Tamaño máximo de las imágenes */
-    height: auto;
+     /*height: auto;*/
 }
 
 h1, h2, h3 {
