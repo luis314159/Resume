@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #1B356B;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    text-align: center;
+}
+
+.skills-container img {
+    flex: 0 1 calc(15% - 20px); /* Ancho de cada imagen menos el espacio */
+    max-width: 40px; /* Tamaño máximo de las imágenes */
+    height: auto;
+}
+
+.python-frameworks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    text-align: center;
+}
+
+.python-frameworks img {
+    flex: 0 1 calc(15% - 20px); /* Ancho de cada imagen menos el espacio */
+    max-width: 40px; /* Tamaño máximo de las imágenes */
+    height: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+#home {
+    text-align: center;
+}
+
+#home img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#about, #skills, #experience, #education, #courses, #hobbies, #resume, #blog {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about p, #skills p, #experience p, #education p, #resume p, #blog p {
+    margin: 10px 0;
+}
+
+#experience div, #education div {
+    margin-bottom: 20px;
+}
+
+#courses ul, #hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+#courses ul li, #hobbies ul li {
+    margin: 10px 0;
+}
+
+#courses ul li img, #hobbies ul li img, #skills img, #experience div img, #education div img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #1B356B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #home img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
