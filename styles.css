@@ -8,7 +8,7 @@ body {
 header {
     background: #1B356B;
     color: #fff;
-    padding: 10px 0;
+    padding: 8px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,33 +37,20 @@ section {
     margin-top: 60px;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espacio entre las imágenes */
-    text-align: center;
-}
 
-.skills-container img {
-    flex: 0 1 calc(15% - 20px); /* Ancho de cada imagen menos el espacio */
-    max-width: 40px; /* Tamaño máximo de las imágenes */
-    /*height: auto;*/
-}
-
-.python-frameworks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espacio entre las imágenes */
-    text-align: center;
-}
-
-.python-frameworks img {
-    flex: 0 1 calc(15% - 20px); /* Ancho de cada imagen menos el espacio */
-    max-width: 40px; /* Tamaño máximo de las imágenes */
-     /*height: auto;*/
-}
+.skills-container, .python-frameworks, .data-bases, .PLC {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+.skills-container img, .python-frameworks img, .data-bases img, .PLC img {
+        flex: 0 1 calc(15% - 20px);
+        max-width: 40px;
+        height: auto;
+    }    
 
 h1, h2, h3 {
     text-align: center;
@@ -81,7 +68,7 @@ h1, h2, h3 {
 }
 
 #about, #skills, #experience, #education, #courses, #hobbies, #resume, #blog {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -113,7 +100,7 @@ footer {
     background: #1B356B;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -141,7 +128,7 @@ footer {
 .hidden {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 0.5s ease-in-out;
+    transition: all 1.0s ease-in-out;
 }
 
 .visible {
