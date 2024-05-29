@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('section');
     const options = {
-        threshold: 0.4 // Ajustado para que se active más fácilmente
+        threshold: 0.1 // Ajustado para que se active más fácilmente
     };
     const observer = new IntersectionObserver(function (entries, observer) {
         entries.forEach(entry => {
