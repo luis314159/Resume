@@ -35,6 +35,7 @@ nav ul li a {
 section {
     padding: 60px 20px;
     margin-top: 60px;
+    justify-content: center;
 }
 
 
@@ -48,7 +49,7 @@ section {
     
 .skills-container img, .python-frameworks img, .data-bases img, .PLC img {
         flex: 0 1 calc(15% - 20px);
-        max-width: 40px;
+        max-width:100px;
         height: auto;
     }
 
@@ -63,6 +64,18 @@ section {
         flex: 0 1 calc(15% - 20px);
         width: 50%;
         height: auto;}  
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;}
+
+#courses img{
+    flex: 0 1 calc(15% - 20px);
+    width: 40%;
+    height: auto;}  
 
 h1, h2, h3 {
     text-align: center;

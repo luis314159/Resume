@@ -1,6 +1,5 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('section');
+    const sections = document.querySelectorAll('section, .skills div'); // Selecciona secciones y divs dentro de .skills
     const options = {
         threshold: 0.1 // Ajustado para que se active más fácilmente
     };
