@@ -53,7 +53,7 @@ section {
         height: auto;
     }
 
-.ulsa, .Data, .Elecro, .Maint, .CNN, .Electric {
+.ulsa, .Data, .Elecro, .Maint, .CNN, .Electric{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
