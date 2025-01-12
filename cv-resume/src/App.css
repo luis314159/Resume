@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+/* App.css */
+.active a {
+  color: #fff !important; /* Cambia el color del texto activo a blanco */
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #1890ff !important; /* Cambia el color de fondo del elemento seleccionado */
+  color: #fff !important; /* Asegura que el texto del elemento seleccionado sea blanco */
+  font-weight: bold; /* Opcional: Haz el texto del elemento seleccionado en negrita */
+  height: 100%; /* Asegura que el elemento seleccionado ocupe toda la altura del contenedor */
+}
+
+.ant-menu-dark .ant-menu-item-selected a {
+  color: #fff !important; /* Asegura que el texto del enlace en el elemento seleccionado sea blanco */
+  display: flex; /* Usar flexbox para centrar el contenido vertical y horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  height: 100%; /* Asegura que el enlace ocupe toda la altura del elemento */
+  padding: 0 20px; /* Ajusta el padding para centrar el texto dentro del cuadro */
+}
+
+.ant-menu-item {
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.ant-menu-item a {
+  width: 100%;
+  display: block;
+  height: 64px; /* Ajusta la altura del enlace para que coincida con la altura del menú */
+  line-height: 64px; /* Ajusta la altura de la línea para centrar el texto verticalmente */
+}
+
+@media (max-width: 768px) {
+  .ant-menu-item {
+    flex: unset;
+    text-align: left;
+  }
+}
